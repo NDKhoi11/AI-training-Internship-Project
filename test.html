@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Ex1</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <style>
+            .flex-container {
+                flex-direction: column;
+                display: flex;
+                height: 1628px; 
+                width: 1440px;
+            }
+            .flex-container1{
+                justify-items: center;
+                display: flex;
+                height: 70%;
+            }
+            .flex-container-head{
+                display: flex;
+                width: 1440px;
+            }
+            .itemhead {
+                height: 60px;
+            }
+            .itemfoot{
+                height: 378px;
+            }
+            .itemhead1{
+                height: 111px;
+                text-align: left;
+                margin-left: 80px;
+
+                font-family: Roboto;
+                font-style: normal;
+                font-weight: 500;
+                font-size: 30px;
+                line-height: 21px;
+                color: #3278C3;
+            }
+            .itemsec3{
+                background-color: white;
+                height: 15%;
+            }
+            .itemsec1{
+                display: flex;
+                background-color: white;
+                height: 592px;
+            }
+            .itemsec2{
+                display: flex;
+                flex-direction: column;
+                height: 598px;
+            }
+
+            .logo{
+                position: absolute;
+                width: 148.11px;
+                height: 35px;
+                left: 80px;
+                top: 11px;
+            }
+            .signin{
+                position: absolute;
+                width: 53px;
+                height: 24px;
+                left: 1308px;
+                top: 18px;
+                font-family: Mulish;
+                font-style: normal;
+                font-weight: bold;
+                font-size: 16px;
+                line-height: 150%;
+            }
+            .search-container{
+                display: flex;
+                background: #FFFFFF;
+                border: 1px solid #DADCE0;
+                box-sizing: border-box;
+                border-radius: 30px;
+                position: absolute;
+                width: 399px;
+                height: 40px;
+                left: 852px;
+                top: 10px;
+            }
+            .search{
+                display: flex;
+                width: 343px;
+                height: 40px;
+                left: 852px;
+                top: 10px;
+            }
+            .input{
+                margin-top: 8px;
+                margin-left: 10px;
+                border: none;
+                outline: none;
+                width: 399px;
+                height: 20px;
+                left: 852px;
+                top: 15px;
+            }
+            .button{
+                background-color: transparent;
+                border: none;
+                width: 24px;
+                height: 24px;   
+                left: 0px;
+                top: 0px;
+                margin-right: 10px;
+                margin-left: 10px;
+                margin-top: 6px;
+                margin-bottom: 8px;
+            }
+            .sec2-1{
+                position: absolute;
+                width: 840px;
+                height: 472px;
+                left: 80px;
+                top: 120px;
+            }
+            .sec2-2{
+                justify-content: space-between;
+                display: flex;
+                flex-direction: column;
+                position: absolute;
+                width: 401px;
+                height: 472px;
+                left: 960px;
+                top: 120px;
+            }
+            .itemart{
+                width: 401px;
+                height: 95px;
+                left: 960px;
+                top: 370px;
+            }
+            .art-container{
+                display: flex;
+                width: 401px;
+                height: 95px;
+            }
+            .text-container{
+                display: flex;
+                flex-direction: column;
+                width: 100%;
+                height: 95px;
+                margin-left: 17px;
+
+
+                justify-content: space-between;
+            }
+            header{
+                text-align: center;
+            }
+
+            article {
+                text-align: left;
+            }
+
+            section{
+                background-color:#E2EEFF;
+                text-align: center;
+            }
+            
+            footer{
+                background-color: darkgreen;
+                text-align: center;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="flex-container">
+            <header class="itemhead">
+                <div class="flex-container-head">
+                    <div class="logo"><img src="D:\Khoi\front-end\Intern_Project\Group 114.png"> </div>
+                    <div class="signin"><img src="D:\Khoi\front-end\Intern_Project\sign in.png"></div>
+                    <div class="search-container">
+                        <div class="search">
+                            <input class="input" type="text" placeholder="Search" > 
+                        </div>
+                        <button type="submit" class="button">
+                            <img src="D:\Khoi\front-end\Intern_Project\ic_search.png">
+                        </button>
+                    </div>
+                </div>
+            </header>
+
+            <section class="itemsec1">
+                <div class="sec2-1">
+                    <img src="D:\Khoi\front-end\Intern_Project\sec2-1.png">
+                </div>
+                <div class="sec2-2">
+                    <article class="itemart">
+                        <div class="art-container">
+                            <img style="width: 123px;height: 95px;left: 960px;top: 120px;" 
+                            src="D:\Khoi\front-end\Intern_Project\Screen Shot 1.png">
+                            
+                            <div class="text-container" >
+                                <article style="width: 261px;height: 44px;">
+                                <a href="#" style="text-decoration: none;font-family: Mulish;font-style: normal;font-weight: bold;font-size: 18px;line-height: 120%;color: #3278C3;">
+                                    Lorem ipsum dolor sit amet consector dapster</a></article>
+                                <article style="width: 261px; height: 48px; font-family: Mulish; font-style: normal;font-weight: normal; font-size: 16px;line-height: 150%;color: #323232;">
+                                    Lorem ipsum dolor sit amet, consector adipiscing elit, ...</article>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="itemart">
+                        <div class="art-container">
+                            <img style="width: 123px;height: 95px;left: 960px;top: 120px;" 
+                            src="D:\Khoi\front-end\Intern_Project\Screen Shot 2.png">
+                            
+                            <div class="text-container" >
+                                <article style="width: 261px;height: 44px;">
+                                <a href="#" style="text-decoration: none;font-family: Mulish;font-style: normal;font-weight: bold;font-size: 18px;line-height: 120%;color: #3278C3;">
+                                    Lorem ipsum dolor sit amet consector dapster</a></article>
+                                <article style="width: 261px; height: 48px; font-family: Mulish; font-style: normal;font-weight: normal; font-size: 16px;line-height: 150%;color: #323232;">
+                                    Lorem ipsum dolor sit amet, consector adipiscing elit, ...</article>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="itemart">
+                        <div class="art-container">
+                            <img style="width: 123px;height: 95px;left: 960px;top: 120px;" 
+                            src="D:\Khoi\front-end\Intern_Project\Screen Shot 3.png">
+                            
+                            <div class="text-container" >
+                                <article style="width: 261px;height: 44px;">
+                                <a href="#" style="text-decoration: none;font-family: Mulish;font-style: normal;font-weight: bold;font-size: 18px;line-height: 120%;color: #3278C3;">
+                                    Lorem ipsum dolor sit amet consector dapster</a></article>
+                                <article style="width: 261px; height: 48px; font-family: Mulish; font-style: normal;font-weight: normal; font-size: 16px;line-height: 150%;color: #323232;">
+                                    Lorem ipsum dolor sit amet, consector adipiscing elit, ...</article>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="itemart">
+                        <div class="art-container">
+                            <img style="width: 123px;height: 95px;left: 960px;top: 120px;" 
+                            src="D:\Khoi\front-end\Intern_Project\Screen Shot 4.png">
+                            
+                            <div class="text-container" >
+                                <article style="width: 261px;height: 44px;">
+                                <a href="#" style="text-decoration: none; font-family: Mulish;font-style: normal;font-weight: bold;font-size: 18px;line-height: 120%;color: #3278C3;">
+                                    Lorem ipsum dolor sit amet consector dapster</a></article>
+                                <article style="width: 261px; height: 48px; font-family: Mulish; font-style: normal;font-weight: normal; font-size: 16px;line-height: 150%;color: #323232;">
+                                    Lorem ipsum dolor sit amet, consector adipiscing elit, ...</article>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </section>
+
+            <section class="itemsec2">
+                <header class="itemhead1">
+                    Featured today
+                </header>
+                <div class="flex-container1">
+                    <article class="itemart">1</article>
+                    <article class="itemart">2</article>
+                    <article class="itemart">3</article>
+                    <article class="itemart">4</article>
+                </div>      
+                <section class="itemsec3">
+
+                </section>
+            </section>
+
+            <footer class="itemfoot">Footer</footer> 
+        </div>
+    </body>
+</html>
