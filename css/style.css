@@ -1,13 +1,13 @@
 html,body{
-    margin: 0;
+    margin: auto;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-size: 16px;
+    max-width: 1440px;
 }
 *{
-    box-sizing: border-box;
-}
-p,h3,h4{
+    padding: 0;
     margin: 0;
+    box-sizing: border-box;
 }
 a{
     position: relative;
@@ -30,15 +30,12 @@ img{
 .header{
     display: flex;
     height: 60px;
-    max-width: 1440px;
-    margin: auto;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.08);
 }
 .header-inner{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    position: relative;
     height: 100%;
 }
 .icon{
@@ -68,62 +65,48 @@ img{
     font-weight: bold;
     color: #3278C3;
 }
-@media (max-width: 600px){
-    body{
-        font-size: 10px !important;
-    }
-    .search-box{
-        margin-left: 0 !important;
-        height: 40% !important;
-        width: 120px;
-    }
-    .logo-icon{
-        width: 60px;
-    }
-    .search-icon{
-        width: 15px;
-    }
-    .search-input{
-        height: 15px;
-        width: 50px;
-    }
-}
 .main{
     display: flex;
     flex-direction: column;
-    height: 73%;
+}
+.section{
+    display: flex;
 }
 .section-hot-film{
-    display: flex;
-    height: 50%;
+    height: 592px;
+    position: relative;
 }
 .section-content{
+    display: flex;
+    align-items: center;
     height: 100%;
-    padding: 4% 0;
+    padding: 60px 0;
 }
 .film-list{
     display: grid;
-    align-items: center;
     grid-template-columns:  69% 31%;
-    grid-row-gap: 10px;
+    /* grid-template-columns: 2fr 1fr; */
+    grid-row-gap: 30px;
     padding: 0;
     margin: 0;
-    height: 100%;
+    /* height: 100%; */
+    width: 100%;
 }
 .film-item{
-    display: flex;
     position: relative;
+    display: flex;
     justify-content: space-between;
     align-items: center;
+    width: 100%;
     height: 100%;
 }
 .film-item:first-child{
-    align-items: flex-end;
-    height: fit-content;
-    width: fit-content;
+    align-items: center;
+    max-width: 840px;
+    position: relative;
     grid-row: 1/5;
 }
-.film-img{
+.img{
     display: flex;
 }
 .banner-info{
@@ -132,20 +115,25 @@ img{
     justify-content: space-evenly;
     height: 21%;
     width: 100%;
-    padding: 0 5%;
+    padding: 0 42px;
     position: absolute;
     background: rgba(0, 0, 0, 0.7);
+}
+.banner-title{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 500;
+    font-size: 2.5em;
+    line-height: 40px;
+    height: fit-content;
+    color: #FFFFFF;
 }
 .banner-desc{
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-weight: 500;
-    font-size: 18px;
+    font-size: 1.125em;
     line-height: 21px;
     height: fit-content;
     color: #FFFFFF;
-}
-.banner-desc:first-child{
-    font-size: 40px;
 }
 .film-info{
     display: flex;
@@ -155,17 +143,15 @@ img{
     height: 100%;
     width: 65%;
 }
-.film-desc{
-    align-items: center;
-    line-height: 150%;
-}
-.film-desc:first-child{
+.film-title{
     font-weight: bold;
     line-height: 120%;
     color: #3278C3;
 }
+.film-desc{
+    line-height: 150%;
+}
 .section-featured{
-    display: flex;
     height: 50%;
     background-color: #E2EEFF;
 }
@@ -216,4 +202,52 @@ img{
 .icon-clock{
     height: fit-content;
     margin-right: 10px;
+}
+@media (max-width: 600px){
+    .header{
+        height: 50px;
+    }
+    .search-box{
+        margin-left: 0 !important;
+        height: 40% !important;
+        width: 120px;
+    }
+    .logo-icon{
+        width: 80px;
+    }
+    .search-icon{
+        width: 15px;
+    }
+    .search-input{
+        height: 15px;
+        width: 50px;
+    }
+}
+@media (max-width: 1024px){
+    .film-list{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .film-item{
+        display: none;
+    }
+    .film-item:first-child{
+        display: block;
+    }
+}
+@media (max-width: 1400px){
+    body{
+        font-size: calc(0.8*16px);
+    }
+    .film-img{
+        width: 30.9%;
+    }
+    .banner-img{
+        width: 95%;
+        height: 100%;
+    }
+    .section-hot-film{
+        height: calc(0.9*592px);
+    }
 }
